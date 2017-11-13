@@ -19,3 +19,14 @@ There is no automated checking on this one
 """
 
 shopping_list = []
+def shopping_list():
+    print("Hey pal! I'm not very good at this, so if you want to delete something, type in 'delete', and if you want to leave, type 'escape', ok? Have fun!")
+    while True:
+        new_item = input("What do you wanna add to the list?  ")
+        if new_item == "delete":
+            delete_item = input("What do you want to delete?  ")
+            shopping_list.remove(delete_item)
+        if new_item == "escape":
+            print(shopping_list)
+        else:
+            shopping_list.apprend(new_item)
