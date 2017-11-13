@@ -18,4 +18,4 @@ git remote rename origin upstream
 git remote add origin http://github.com/YOU/more-lists
 ```
 
-3. Push your changes using `git push origin master`
+3. Push your changes using `git push origin master`# more-lists
