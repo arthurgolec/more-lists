@@ -19,26 +19,3 @@ There is no automated checking on this one
 """
 
 shopping_list = []
-def shopping_listp():
-    print("To see all commands, type 'help'")
-    while True:
-        new_item = input("What do you wanna add to the list?  ")
-        if new_item.lower() == "list":
-            print(shopping_list)
-        elif new_item.lower() == "help":
-            print("'list' prints the list you made, 'delete' deletes the next item you input, 'exit' exits the program, and 'help' brings up this text")
-        elif new_item.lower() == "delete":
-            print(shopping_list)
-            delete_item = input("What do you want to delete?  ")
-            shopping_list.remove(delete_item)
-        elif new_item.lower() == "exit" or new_item == "escape":
-            break
-        else:
-            shopping_list.append(new_item)
-    again = input("Do you want to run this program again?  ").lower()
-    if again == "yes":
-        shopping_listp()
-    else:
-        again = input("Well, I don't know what to do, so I'll ask again. Do you want to run this program again?  ")
-
-shopping_listp()
